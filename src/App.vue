@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HomeLayout/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeLayout from "@/components/HomeLayout";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomeLayout
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="stylus">
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Lato:wght@300&display=swap&family=Lato:wght@700&display=swap');
+
+:root
+  --nav-height 100px
+
+*
+  margin 0
+  padding 0
+  color whitesmoke
+  font-family adamina, fangsong, Georgia, serif;
+  overflow hidden
+
+body
+  min-width 100vw
+  min-height 100vh
 </style>

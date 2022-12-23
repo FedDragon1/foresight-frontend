@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 14400 14400" style="enable-background:new 0 0 14400 14400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#000000;stroke-width:700;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#000000;stroke-width:700;stroke-miterlimit:10;}
+	.st3{fill:#C1272D;}
+</style>
+<circle class="st0" cx="7200" cy="7200" r="7200"/>
+<g>
+	<line class="st0" x1="4000" y1="8654" x2="14313.6" y2="8654"/>
+	<g>
+		<line class="st1" x1="4000" y1="8654" x2="10134.8" y2="8654"/>
+		<g>
+			<polygon points="8168.8,11246.2 9270,8654 8168.8,6061.8 14313.6,8654 			"/>
+		</g>
+	</g>
+</g>
+<path class="st2" d="M6773.4,8638.9c0,0,2238.7-3125,5072.5,0"/>
+<path class="st2" d="M11792.9,8631.1c0,0-2215.3,3240.8-5019.5,0"/>
+<circle class="st3" cx="9283.1" cy="8654" r="835"/>
+<path d="M7200.6,0c-172.8,0-344.2,6.2-514,18.2L71.9,8217.2c38.3,271,91.8,537.2,159.4,797.6l2878.6,0.7l-1835.3,2274.9
+	c141.1,204.1,292.6,400.5,453.6,588.5l7342.4-9101.2L8503.4,2330L3692.7,8293.1l-2753.1-0.7L7619.8,12.1
+	C7481.1,4.2,7341.3,0,7200.6,0z"/>
+</svg>
