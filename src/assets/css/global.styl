@@ -1,0 +1,26 @@
+cardilize()
+  background rgba(whitesmoke 10%)
+  border-radius 20px
+  border-top 1px transparent solid
+  border-left 1px transparent solid
+  border-right 1px transparent solid
+  border-bottom 1px transparent solid
+  backdrop-filter: blur(2px);
+  transition all ease-in-out 0.2s
+
+  &:before
+    position absolute
+    content ""
+    display inline-block
+    width 100%
+    height 100%
+    border-radius 20px
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+
+  &:hover
+    background rgba(whitesmoke 11%)
+    border-top 1px whitesmoke solid
+    border-left 1px whitesmoke solid
+    border-right 1px rgba(whitesmoke, 0.5) solid
+    border-bottom 1px rgba(whitesmoke, 0.5) solid
+    backdrop-filter: blur(10px);
