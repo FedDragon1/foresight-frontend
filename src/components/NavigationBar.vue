@@ -1,13 +1,15 @@
 <template>
   <nav>
     <div id="icon-container">
-      <img src="../assets/foresight.svg" alt="icon" id="site-icon"/>
+      <router-link to="/">
+        <img src="../assets/foresight.svg" alt="icon" id="site-icon"/>
+      </router-link>
       <span id="site-name" >Foresight</span>
     </div>
     <div id="links">
-      <a href="#" class="link" attr="Register">Register</a>
-      <a href="#" class="link" attr="Login">Login</a>
-      <a href="#" class="link" attr="About">About</a>
+      <router-link to="/register" class="link" attr="Register">Register</router-link>
+      <router-link to="/login" class="link" attr="Login">Login</router-link>
+      <router-link to="/about" class="link" attr="About">About</router-link>
     </div>
   </nav>
 </template>
@@ -40,8 +42,9 @@ nav
   top 0
   height var(--nav-height)
   vertical-align center
-  background #00000077
-  backdrop-filter blur(15px)
+  backdrop-filter blur(5px) saturate(50%)
+  background-image radial-gradient(transparent, #141414);
+  background-size 5px 5px
   animation 0.5s ease-out 0s 1 slide-from-top
 
   #icon-container
@@ -64,6 +67,7 @@ nav
       padding-left 20px
       font-size 36px
       line-height var(--item-height)
+      user-select none
 
       &:before
         position absolute

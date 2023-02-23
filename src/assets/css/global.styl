@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Lato:wght@300&display=swap&family=Lato:wght@700&display=swap');
+
 cardilize()
   background rgba(whitesmoke 10%)
   border-radius 20px
@@ -16,6 +18,7 @@ cardilize()
     height 100%
     border-radius 20px
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+    z-index -1
 
   &:hover
     background rgba(whitesmoke 11%)
@@ -24,3 +27,47 @@ cardilize()
     border-right 1px rgba(whitesmoke, 0.5) solid
     border-bottom 1px rgba(whitesmoke, 0.5) solid
     backdrop-filter: blur(10px);
+
+
+@keyframes shift-left
+  0%
+    transform translateX(300px)
+  100%
+    transform translateX(0)
+
+@keyframes brighten
+  0%
+    filter brightness(50%)
+  100%
+    filter brightness(100%)
+
+@keyframes fade-in-blur
+  0%
+    filter blur(20px)
+    opacity 0
+  100%
+    filter blur(0)
+    opacity 100%
+
+@keyframes cursor-blink
+  49%
+    background whitesmoke
+  50%
+    background transparent
+  99%
+    background transparent
+
+.is-typed span.cursor:before
+  position absolute
+  height 174px
+  width 10px
+  content ""
+  display inline-block
+  background whitesmoke
+  transform translateX(20px)
+
+.is-typed span.typing-false:before
+  animation cursor-blink 1s infinite
+
+svg.svg-inline--fa path
+  fill: var(--error-red)

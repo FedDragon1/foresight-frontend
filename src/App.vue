@@ -1,23 +1,30 @@
 <template>
-  <HomeLayout/>
+  <NavigationBar/>
+  <router-view/>
 </template>
 
 <script>
-import HomeLayout from "@/components/HomeLayout";
+import NavigationBar from "@/components/NavigationBar";
 
 export default {
   name: 'App',
   components: {
-    HomeLayout
+    NavigationBar
   }
 }
 </script>
 
 <style lang="stylus">
-@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Lato:wght@300&display=swap&family=Lato:wght@700&display=swap');
+@import "assets/css/global.styl"
 
 :root
   --nav-height 100px
+  --passing-green #32a850
+  --error-red #C30015
+  --btn-purple rgb(#3D2AB1)
+  --btn-purple-trans rgba(#3D2AB1, 75%)
+  --link-pink rgb(#eaaba7)
+  --link-pink-trans rgba(#eaaba7, 75%)
 
 *
   margin 0
@@ -29,4 +36,10 @@ export default {
 body
   min-width 100vw
   min-height 100vh
+  background linear-gradient(to bottom, #141414 30%, #15162b)
+
+#content
+  #wrapper
+    animation 1s cubic-bezier(0.42, 0, 0.12, 1.01) 0s 1 shift-left, 1s ease-in-out fade-in-blur
+
 </style>

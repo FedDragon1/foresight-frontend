@@ -1,0 +1,115 @@
+formify(width, include_varification=false, verification-width=100px, verification-height=75px)
+  #form
+    width 100%
+    height 100%
+    display flex
+    flex-direction column
+    align-items center
+    justify-content space-between
+
+    .errmsg
+      color red
+      font-family lato
+      display block
+      overflow hidden
+
+    .v-enter-active,
+    .v-leave-active {
+      transition: all 0.5s ease-out;
+      height 19px
+      opacity 100%
+    }
+
+    .v-enter-from,
+    .v-leave-to {
+      opacity: 0;
+      height 0
+      filter blur(10px)
+      transform translateY(-20px)
+    }
+
+    input[type="text"]
+    input[type="password"]
+    input[type="email"]
+    button
+      width width
+      height 75px
+      border-radius 20px
+      padding-left 20px
+      background rgba(#141414, 30%)
+      border whitesmoke 1px solid
+      font-family lato
+      font-size 1.2rem
+      transition border ease-in-out 0.2s
+
+      &:focus
+        outline none
+        border var(--btn-purple) 1px solid
+
+    button[type="button"]
+      border whitesmoke 1px solid
+      transition background ease-in-out 0.2s
+      font-size 1.4rem
+      font-family inherit
+      background: var(--btn-purple-trans)
+
+      &:hover
+        background-color var(--link-pink-trans)
+
+      &:focus
+        outline none
+
+    #anchors
+      display flex
+      flex-direction row
+      justify-content space-between
+      width 400px
+      #remember
+        display flex
+        flex-direction row
+        gap 10px
+      a
+        transition color ease-in-out 0.2s
+        &:hover
+          color var(--link-pink)
+
+    input[type="checkbox"]
+      height 20px
+      width 20px
+      border whitesmoke 1px solid
+      border-radius 5px
+      appearance none
+
+      &:before
+        content ""
+        display inline-block
+        width 100%
+        height 100%
+        border-radius 4px
+        background: var(--link-pink)
+        transform scale(0)
+        transition transform 0.2s ease-in-out
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+
+      &:checked:before
+        transform scale(0.8)
+
+  if include_varification
+    #verification
+      display flex
+      gap 15px
+      width 22px + width
+      overflow visible
+
+      #code
+        border whitesmoke 1px solid
+        display inline-block
+        border-radius 10px
+        height verification-height
+        width verification-width
+        padding-right 29px // dont change
+        transition all ease-in-out 0.2s
+
+        &:hover {
+          transform: scale(1.4);
+        }

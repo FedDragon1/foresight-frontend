@@ -1,10 +1,14 @@
 <template>
-  <h1>About</h1>
+  <div id="content">
+    <div id="wrapper">
+      <h1>About</h1>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "About"
+  name: "AboutPage"
 }
 </script>
 
